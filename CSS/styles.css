@@ -1,0 +1,10 @@
+/*CSS général*/
+*{
+    text-decoration: none;
+    color:#1b1b1be0;
+    width: 100%;
+}
+ul
+{
+    list-style-type: none;
+}
