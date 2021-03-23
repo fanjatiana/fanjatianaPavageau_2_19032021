@@ -12,6 +12,9 @@
     text-decoration: none;
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
+    margin-left:5px;
+    margin-right: 5px; 
+    max-width: 640px; 
 }
 
 /*bannière du site*/
@@ -19,21 +22,42 @@
 .banner{
     display: flex;
     justify-content: space-between;
-    margin-left:30px;
-    margin-right: 30px;
+    
 }
 
-/*.banner div{
-    line-height: 120px;
-
-}*/
-
 .registration{
-    margin-top:30px;
+    margin-top:40px;
 }
 .registration a{
     font-weight: bold;
     color: var(--blue);
+}
+
+/*liens navigation interne*/
+.nav-inside ul{ 
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px var(--bg-gray) solid; 
+    width: 90%;
+}
+}
+.nav-inside a{
+    color: var(--font-color);
+}
+.nav-inside a:hover{
+    color: var(--blue);
+    font-weight: bold;
+    border-bottom: 2px var(--blue) solid;      
+}
+.nav-inside a:link{
+    color: var(--font-color);
+}
+.nav-inside a:visited:{
+    color: var(--blue);     
+}
+.nav-inside a:active {
+    color: var(--blue);
+    font-weight: bold;    
 }
 
 
