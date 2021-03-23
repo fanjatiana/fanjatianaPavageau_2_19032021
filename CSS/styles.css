@@ -1,10 +1,21 @@
-/*CSS général*/
+/*variables*/
+:root{
+    --blue:#0065FC;
+    --light-blue:#DEEBFF;
+    --bg-gray:#F2F2F2;
+    --font-color:#000000;
+}
+
+/*propriétés générales*/
 *{
+    
     text-decoration: none;
-    color:#1b1b1be0;
-    width: 100%;
-}
-ul
-{
     list-style-type: none;
+    font-family: 'Raleway', sans-serif;
 }
+
+/*liens*/
+
+
+
+
