@@ -12,19 +12,19 @@
     text-decoration: none;
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
-    margin-left:5px;
-    margin-right: 5px; 
-    max-width: 640px; 
+    max-width: 320px; 
 }
+
+
 
 /*bannière du site*/
 
-#banner{
+#banner .home-registration{
     display: flex;
     justify-content: space-between;
-    
+    margin-left:10px;
+    margin-right: 10px;  
 }
-
 .registration{
     margin-top:40px;
 }
@@ -47,6 +47,7 @@
     border-bottom: 3px var(--bg-gray) solid;  
     width:50%;
     padding-bottom: 10px;
+    padding-left: 30px;
 }
 
 #nav-inside ul li:hover{
