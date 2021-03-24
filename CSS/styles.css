@@ -56,7 +56,7 @@
 #nav-inside a:link{
     color: var(--font-color);
 }
-#nav-inside a:visited:{
+#nav-inside a:visited{
     color: var(--blue);     
 }
 #nav-inside a:active {
