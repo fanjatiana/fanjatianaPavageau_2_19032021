@@ -19,7 +19,7 @@
 
 /*bannière du site*/
 
-.banner{
+#banner{
     display: flex;
     justify-content: space-between;
     
@@ -34,31 +34,48 @@
 }
 
 /*liens navigation interne*/
-.nav-inside ul{ 
+#nav-inside ul { 
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px var(--bg-gray) solid; 
-    width: 90%;
+    width: 100%;
+    padding-left: 0;
 }
+
+
+#nav-inside ul li{
+    margin-bottom: 10px;
+    border-bottom: 3px var(--bg-gray) solid;  
+    width:50%;
+    padding-bottom: 10px;
 }
-.nav-inside a{
+
+#nav-inside ul li:hover{
+    border-bottom: 3px var(--blue) solid;
+    width: 50%;
+}
+/*#nav-inside ul li:active{
+    border-bottom: 3px var(--blue) solid
+}*/
+
+#nav-inside a{
     color: var(--font-color);
 }
-.nav-inside a:hover{
-    color: var(--blue);
-    font-weight: bold;
-    border-bottom: 2px var(--blue) solid;      
-}
-.nav-inside a:link{
-    color: var(--font-color);
-}
-.nav-inside a:visited:{
-    color: var(--blue);     
-}
-.nav-inside a:active {
+#nav-inside a:hover{
     color: var(--blue);
     font-weight: bold;    
 }
+#nav-inside a:link{
+    color: var(--font-color);
+}
+#nav-inside a:visited:{
+    color: var(--blue);     
+}
+#nav-inside a:active {
+    color: var(--blue);
+    font-weight: bold;
+  
+}
+
 
 
 
