@@ -12,7 +12,7 @@
     text-decoration: none;
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
-    max-width: 100%; 
+    max-width: 600px; 
 }
 /************************************HEADER**************************************/
 /*bannière du site*/
@@ -65,14 +65,12 @@
     color: var(--blue);
     font-weight: bold;  
 }
-/*partie titre et paragrape de la recherche géolocalisée*/
+/*partie titre et paragraphe de la recherche géolocalisée*/
 #search-map {
     display: flex;
     flex-direction: column;    
 }
-#search-map h2,p{
-    text-align: center;
-}
+
 #search-map h2 {
     font-size: 1.3em;
 }
@@ -112,58 +110,61 @@
     padding-top: 9px;
 }
 /*******************************************MAIN**************************************/
+#Marseille-search {
+    width: 80%;
+}
+
 /*Filtres*/
 #search-filters{
     margin-top: 10px;
+    
 }
 #search-filters h3{
     margin-left: 30px;
 }
 /*liste des filtres*/
-.list-filters{
+#search-filters ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;;
-    
+    justify-content: space-between;
+       
 }
 
+
 .list-filters li{
+    margin-bottom: 20px; 
+
+}
+
+.list-filters a{
     border:1px black solid;
     width: auto;
+    height: 20px;
+    height: 50px;
     border-top-right-radius:30px;
     border-bottom-right-radius: 30px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     border-color: var(--bg-gray);
-    padding:10px 10px 0 8px;
-    margin-bottom: 20px;
-  
+    padding:10px 10px 10px 0px;
+    color: var(--font-color);
+    font-weight: bold;
+    
+}
+.list-filters i{
+    margin-right: 20px;
+    border:1px var(--light-blue) solid;
+    background-color: var(--light-blue);
+    color: var(--blue);
+    border-radius: 50%;
+    font-size: 1.5em;
+    padding:8px;
+    position: relative;
+    top: 3px;
     
 }
 
-.list-filters a{
-    color: var(--font-color);
-    padding-right: 10px;
-}
-
-.list-filters .fas{
-    color:var(--blue);
-    background-color:var(--light-blue);
-    width: 20px;
-    height: 50px;
-    border-radius: 50%;
-    position: relative;
-    left: -10px;
-    bottom: 5px;
-    padding-left: 20px;
-    padding-top:20px;
-    border:1px black solid;   
-}
-
-.list-filters i .fas{
-    width: 30%;
-}
 
 
 
