@@ -68,13 +68,12 @@
 }
 /*partie titre et paragraphe de la recherche géolocalisée*/
 #search-map {
-    display: flex;
-    flex-direction: column;
-    margin:auto;    
+    margin:auto;
+    width: 90%;    
 }
 
 #search-map h2 {
-    font-size: 1.3em;
+    font-size: 1.7;
 }
 #search-map .search-bar {
     text-align: center;
@@ -115,6 +114,8 @@
 #Marseille-search {
     width: 80%;
     margin: auto;
+    display: flex;
+    flex-direction:column;
 }
 
 /*Filtres*/
@@ -174,8 +175,21 @@
     background-color:var(--light-blue);
     color: var(--blue);   
 }
+/*******Section Les plus populaires*********/
 
+#search-filters{
+    order:1;
+}
 
+#accommodation-List{
+    order:3;
+}
+#popular{
+    order:2;
+}
+#activities-List{
+    order:4;
+}
 
 
 
