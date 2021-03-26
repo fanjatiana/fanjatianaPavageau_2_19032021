@@ -111,6 +111,20 @@
     padding-top: 9px;
 }
 /*******************************************MAIN**************************************/
+/**mise en page des différents themes***/
+#search-filters{
+    order:1;
+}
+#accommodation-List{
+    order:3;
+}
+#popular{
+    order:2;
+}
+#activities-List{
+    order:4;
+}
+
 #Marseille-search {
     width: 80%;
     margin: auto;
@@ -177,19 +191,6 @@
 }
 /*******Section Les plus populaires*********/
 
-#search-filters{
-    order:1;
-}
-
-#accommodation-List{
-    order:3;
-}
-#popular{
-    order:2;
-}
-#activities-List{
-    order:4;
-}
 
 
 
