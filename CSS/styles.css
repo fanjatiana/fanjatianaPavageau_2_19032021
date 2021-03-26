@@ -43,11 +43,12 @@
     padding-bottom: 10px;
     padding-left: 30px;
 }
-/*effet de survol des liens de la navigation interne*/
+/*effet de survol les liens de la navigation interne*/
 #nav-inside ul li:hover{
     border-bottom: 3px var(--blue) solid;
     width: 50%;
 }
+
 #nav-inside a{
     color: var(--font-color);
 }
@@ -68,7 +69,8 @@
 /*partie titre et paragraphe de la recherche géolocalisée*/
 #search-map {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    margin:auto;    
 }
 
 #search-map h2 {
@@ -112,6 +114,7 @@
 /*******************************************MAIN**************************************/
 #Marseille-search {
     width: 80%;
+    margin: auto;
 }
 
 /*Filtres*/
@@ -127,14 +130,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-       
+    justify-content: space-between;       
 }
-
 
 .list-filters li{
     margin-bottom: 20px; 
-
 }
 
 .list-filters a{
@@ -150,7 +150,7 @@
     padding:10px 10px 10px 0px;
     color: var(--font-color);
     font-weight: bold;
-    
+    scale: 1;    
 }
 .list-filters i{
     margin-right: 20px;
@@ -161,9 +161,21 @@
     font-size: 1.5em;
     padding:8px;
     position: relative;
-    top: 3px;
-    
+    top: 3px;   
 }
+/*effets au survole sur les listes*/
+
+.list-filters a:hover{
+    background-color: var(--blue);
+    color: var(--light-blue);
+}
+
+.list-filters a:active{
+    background-color:var(--light-blue);
+    color: var(--blue);   
+}
+
+
 
 
 
