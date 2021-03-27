@@ -142,10 +142,10 @@
 }
 /*liste des filtres*/
 #search-filters ul{
+    padding: 0;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;       
+    flex-wrap: wrap;    
 }
 
 .list-filters li{
@@ -163,8 +163,7 @@
     border-color: var(--bg-gray);
     padding:10px 15px 10px 0px;
     color: var(--font-color);
-    font-weight: bold;
-    scale: 1;    
+    font-weight: bold; 
 }
 .list-filters i{
     margin-right: 10px;
@@ -193,6 +192,22 @@
 .list-filters a:active{
     background-color:var(--light-blue);
     color: var(--blue);   
+}
+
+/*partie info i */
+.info{
+    font-weight:lighter;
+    font-size: 0.9em;  
+}
+
+.info i{
+    border:1px var(--bg-gray) solid;
+    border-radius: 50%;
+    width: 16px;
+    height: 22px;
+    padding-left: 10px;
+    padding-top: 2px;
+    color: var(--blue);
 }
 /*******Section Les plus populaires*********/
 
