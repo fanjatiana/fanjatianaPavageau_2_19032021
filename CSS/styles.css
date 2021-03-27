@@ -56,12 +56,9 @@
     color: var(--blue);
     font-weight: bold;    
 }
-#nav-inside a:link{
-    color: var(--font-color);
-}
-#nav-inside a:visited{
+/*#nav-inside a:visited{
     color: var(--blue);     
-}
+}*/
 #nav-inside a:active {
     color: var(--blue);
     font-weight: bold;  
@@ -89,13 +86,16 @@
 #city-search::placeholder{   
     color:var(--font-color);
 }
+#city-search:focus{
+    background-color: var(--bg-gray);
+}
 .search-bar .fa-search{
     color: #FFFFFF;
 }
 .search-bar .search-button {
     background-color: var(--blue);
     border-radius: 35%;
-    height: 36px;
+    height: 35px;
     position: relative;
     right: 30px;
     text-decoration: none;
@@ -107,7 +107,7 @@
     position: relative;
     left: 18px;
     width: 30px;
-    height: 26px;
+    height: 25px;
     padding-top: 9px;
 }
 /*******************************************MAIN**************************************/
@@ -153,22 +153,21 @@
 }
 
 .list-filters a{
-    border:1px black solid;
+    border:1px var(--bg-gray) solid;
     width: auto;
-    height: 20px;
     height: 50px;
     border-top-right-radius:30px;
     border-bottom-right-radius: 30px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     border-color: var(--bg-gray);
-    padding:10px 10px 10px 0px;
+    padding:10px 15px 10px 0px;
     color: var(--font-color);
     font-weight: bold;
     scale: 1;    
 }
 .list-filters i{
-    margin-right: 20px;
+    margin-right: 10px;
     border:1px var(--light-blue) solid;
     background-color: var(--light-blue);
     color: var(--blue);
@@ -176,7 +175,13 @@
     font-size: 1.5em;
     padding:8px;
     position: relative;
-    top: 3px;   
+    top: 3px;
+    right: 4px;   
+}
+
+.list-filters i.fa-child {
+    width: 20px;
+    padding-left: 12px;
 }
 /*effets au survole sur les listes*/
 
