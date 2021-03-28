@@ -143,7 +143,8 @@
 /*Filtres*/
 #search-filters{
     width: 90%;
-    margin: auto;    
+    margin: auto;
+    margin-bottom: 40px;    
 }
 #search-filters h3{
   font-weight: bold;
@@ -196,21 +197,18 @@
     background-color:var(--light-blue);
     color: var(--blue);   
 }
-
 /*partie info i */
 .info{
-    font-weight:lighter;
-    font-size: 0.9em;  
-}
+    font-size: 0.9em;
 
+}
 .info i{
-    border:1px var(--bg-gray) solid;
+    border:1px var(--bg-gray-dark) solid;
     border-radius: 50%;
-    width: 16px;
-    height: 22px;
-    padding-left: 10px;
-    padding-top: 2px;
+    padding: 8px 12px;
     color: var(--blue);
+    float: left;
+    margin-right: 10px;
 }
 /*******Section Les plus populaires*********/
 #popular{
