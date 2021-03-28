@@ -4,7 +4,7 @@
     --light-blue:#DEEBFF;
     --bg-gray:#F2F2F2;
     --font-color:#000000;
-    --border-bottom:
+    --bg-gray-dark:#d9d9d9;
 }
 /*propriétés générales*/
 *{
@@ -79,7 +79,7 @@
 .search-bar{
     width: 100%;
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .search-bar input{
     height: 45px;
@@ -147,57 +147,51 @@
 }
 #search-filters h3{
   font-weight: bold;
+  width: 100%;
 }
 /*liste des filtres*/
 #search-filters ul{
     padding: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;    
 }
-
 .list-filters li{
     margin-bottom: 20px;
-    margin-right: 10px; 
+    margin-right: 8px; 
 }
-
 .list-filters a{
-    border:1px var(--bg-gray) solid;
-    width: auto;
-    height: 50px;
+    border:3px var(--bg-gray-dark) solid;
     border-top-right-radius:30px;
     border-bottom-right-radius: 30px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     border-color: var(--bg-gray);
-    padding:10px 5px 10px 0px;
+    padding: 12px;
     color: var(--font-color);
     font-weight: bold; 
 }
 .list-filters i{
-    margin-right: 10px;
     border:1px var(--light-blue) solid;
     background-color: var(--light-blue);
     color: var(--blue);
     border-radius: 50%;
     font-size: 1.5em;
-    padding:8px;
+    padding:12px;
     position: relative;
     top: 3px;
-    right: 4px;   
+    right: 12px;   
 }
-
 .list-filters i.fa-child {
     width: 20px;
     padding-left: 12px;
 }
 /*effets au survole sur les listes*/
-
 .list-filters a:hover{
     background-color: var(--blue);
     color: var(--light-blue);
 }
-
 .list-filters a:active{
     background-color:var(--light-blue);
     color: var(--blue);   
