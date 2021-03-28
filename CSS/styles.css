@@ -14,6 +14,8 @@
     font-family: 'Raleway', sans-serif;
     max-width: 600px; 
 }
+
+
 /************************************HEADER**************************************/
 /*bannière du site*/
 #banner{
@@ -205,7 +207,7 @@
 .info i{
     border:1px var(--bg-gray-dark) solid;
     border-radius: 50%;
-    padding: 8px 12px;
+    padding: 10px 14px;
     color: var(--blue);
     float: left;
     margin-right: 10px;
@@ -213,63 +215,41 @@
 /*******Section Les plus populaires*********/
 #popular{
     background-color: var(--bg-gray);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
-.popular-list article{
-    border:1px black solid;
-    border-top-left-radius:10% ;
-    border-bottom-left-radius:10% ;
-    border-top-right-radius: 10%;
-    border-bottom-right-radius:10% ;
+#popular div{
     width: 90%;
-    height:130px ;
-    max-width: 600px;
-    margin: 20px auto;
-    overflow: auto;
+    margin: auto;
+}
+.title-theme  h2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;   
 }
 
+/** liste de cartes: les plus populaires*/
+
+.pupular-list article{
+    width: 100%;
+}
+
+.popular-liste a{
+    display: flex;
+}
 .cards{
     display: flex;
     flex-direction: row;
-    border-top-left-radius:10% ;
-    border-bottom-left-radius:10% ;
-    border-top-right-radius: 10%;
-    border-bottom-right-radius:10%;
     width: 100%;
 }
-
 .img-cards{
     width: 40%;
-
-
-    
 }
-
 .img-cards img{
-    width: 100%;
-
-    
+    border-style: none;
+    object-fit: cover;
+    width: 135px;
+    height: 135px;
+    border-radius: 20px 0 0 20px;
 }
-
-.info-cards {
-    width: 60%;
-    margin-left: 20px;
-
-}
-.infos-cards div{
-    width: 100%;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
