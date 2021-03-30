@@ -305,6 +305,7 @@
     border-style: none;
     object-fit: cover;
     width: 98%;
+    height: 100px;
     border-radius: 20px 20px 0 0px;  
 }
 #accommodation-List .img-cards{
@@ -321,6 +322,10 @@
     margin-bottom: 30px;
 }
 
+#accommodation-List .info-cards{
+    margin-bottom:10px ;
+}
+
 #accommodation-List .seeMore a{
     font-size: 1.1em;
     color: var(--font-color);
@@ -332,6 +337,36 @@
 }
 
 /***Activités à Marseilles***/
+
+#activities-List {
+    padding-bottom: 30px;
+}
+
+#activities-List .cardsActivities{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px var(--bg-gray) solid;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px var(--bg-gray-dark); 
+}
+
+#activities-List .img-cards, .info-cards{
+    width: 100%;
+}
+#activities-List .img-cards{
+    margin-bottom: 10px;
+}
+#activities-List .info-cards h4{
+    margin-left: 10px;
+}
+
+#activities-List .img-cards img {
+   border-radius: 20px 20px 0px 0px;
+   height:100px ;
+}
+
+
 
 
 
