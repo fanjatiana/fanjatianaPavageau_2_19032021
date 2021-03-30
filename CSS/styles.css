@@ -254,7 +254,8 @@
     width: 100%;
     border: 1px var(--bg-gray) solid;
     border-radius: 20px;
-    box-shadow: 2px 5px 10px var(--bg-gray-dark);   
+    box-shadow: 2px 5px 10px var(--bg-gray-dark);
+    background-color:#FFFFFF;   
 }
 .img-cards{
     width: 40%;
