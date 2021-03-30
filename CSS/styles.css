@@ -12,7 +12,7 @@
     text-decoration: none;
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
-    max-width: 479px; 
+    max-width: 600px; 
 }
 
 
@@ -342,6 +342,10 @@
     padding-bottom: 30px;
 }
 
+#activities-List h3{
+    margin: 30px 0 30px 20px;
+}
+
 #activities-List .cardsActivities{
     display: flex;
     flex-direction: column;
@@ -366,14 +370,29 @@
    height:100px ;
 }
 
+/*************************************FOOTER***********************/
 
+/*A propos*/
 
-
-
-
-
-
-
-
-
+#footerReservia {
+   
+    width: 100%;
+    background-color: var(--bg-gray);
+}
+#footerReservia .footerContainer{
+    width: 90%;
+    margin: auto;
+    padding-top:30px; 
+}
+.aboutUs a{
+    color: var(--font-color);
+    font-size: 0.9em;
+   
+}
+.aboutUs ul{
+    padding-left:0;
+}
+.aboutUs ul li{
+    margin-bottom: 10px;
+}
 
