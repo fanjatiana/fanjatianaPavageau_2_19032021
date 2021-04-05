@@ -12,6 +12,7 @@
     text-decoration: none;
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
     max-width: 600px; 
 }
 
@@ -118,6 +119,7 @@
 }
 #city-search::placeholder{   
     color:var(--font-color);
+    font-size: 1em;
 }
 .search-bar .fa-search{
     color: #FFFFFF;
@@ -153,6 +155,11 @@
   font-weight: bold;
   width: 100%;
 }
+
+/* monnaie:€*/
+span{
+    font-weight: bold;
+} 
 /*liste des filtres*/
 #search-filters ul{
     padding: 0;
@@ -174,7 +181,8 @@
     border-color: var(--bg-gray);
     padding: 12px;
     color: var(--font-color);
-    font-weight: bold; 
+    font-weight: bold;
+    font-size: 0.88em; 
 }
 .list-filters i{
     border:1px var(--light-blue) solid;
@@ -356,14 +364,12 @@
     box-shadow: 2px 5px 10px var(--bg-gray-dark); 
 }
 
-#activities-List .img-cards, .info-cards{
-    width: 100%;
-}
 #activities-List .img-cards{
     margin-bottom: 10px;
 }
 #activities-List .info-cards h4{
-    margin-left: 10px;
+    margin: 0 10px 20px 10px ;
+    font-size: 0.9em;
 }
 
 #activities-List .img-cards img {
