@@ -13,7 +13,7 @@
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
-    max-width: 600px; 
+    max-width: 457px; 
 }
 
 
@@ -113,13 +113,13 @@
     border-top-left-radius: 35%;
     border-bottom-left-radius: 35%;
     padding:10px 20px;
-    position: relative;
-    height: 25px;
-    left: 5px;   
+    /*position: relative;
+    left: 5px;*/ 
+    height: 25px;  
 }
 #city-search::placeholder{   
     color:var(--font-color);
-    font-size: 1em;
+    font-size: 0.9em;
 }
 .search-bar .fa-search{
     color: #FFFFFF;
@@ -193,7 +193,7 @@ span{
     padding:12px;
     position: relative;
     top: 3px;
-    right: 12px;   
+    right: 13px;   
 }
 .list-filters i.fa-child {
     width: 20px;
@@ -364,6 +364,9 @@ span{
     box-shadow: 2px 5px 10px var(--bg-gray-dark); 
 }
 
+#activities-List .img-cards, .info-cards{
+    width: 100%;
+}
 #activities-List .img-cards{
     margin-bottom: 10px;
 }
