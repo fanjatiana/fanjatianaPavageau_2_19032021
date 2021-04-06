@@ -92,3 +92,29 @@
     }
 
 }
+
+@media screen and (min-width: 1002px){
+    #banner{
+        flex-wrap: nowrap;
+    }
+    #banner .registration{
+        order:3;
+        margin-left: 30px;
+        margin-top: 39px;
+        margin-right: 20px;
+    }
+    #nav-inside{
+        margin-left: 500px;
+    }
+    #nav-inside a{
+        border-bottom: none;
+        border-top:3px var(--bg-gray) solid ;
+        padding-top:20px;
+    }
+    #nav-inside a:hover, #nav-inside a:active{
+        border-top: 3px var(--blue) solid;
+        border-bottom:none;
+    }
+
+
+}
