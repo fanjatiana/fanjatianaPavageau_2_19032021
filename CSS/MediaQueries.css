@@ -129,9 +129,10 @@
     /*sections*/
     #search-filters{
         margin-left: 20px;
+        order:1
     }
     #accommodation-List{
-        order:1;
+        order:2;
         width: 60%;
         margin-right: 10px;
         background-color: var(--bg-gray);
@@ -142,19 +143,19 @@
         text-align: start;
     }
     #popular{
-        order:2;
+        order:3;
         width: 30%;
         border-radius: 20px;
     }
     #activities-List{
-        order:3;
-    }
-    #Containt{
-        display: flex;
-        flex-wrap: wrap;   
+        order:4;
     }
     .cardsPopular{
         width: 90%;
+    }
+    #Marseille-search{
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
 
