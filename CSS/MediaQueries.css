@@ -1,4 +1,4 @@
-@media screen and (min-width: 456px) and (max-width:768px){
+@media screen and (min-width: 456px){
         /*header partie recherche hebergement*/
         #search-accommodation {
             text-align: center;
@@ -14,7 +14,9 @@
         .list-filters a {
             font-size: 0.8em;
         }
-
+        .list-filters li{
+            margin-bottom: 5px;
+        }
         .buttons-filter{
             display: flex;
         }
@@ -25,8 +27,57 @@
         #search-filters ul{
             width: 80%;
         }
-        
+        .info{
+            margin-top: 30px;
+        }
+}
 
+@media screen and (min-width: 600px) and (max-width:768px){
+    /*les plus populaires*/
+    .cardsPopular{
+        width: 80%;
+        margin: auto;
+    }
+    /*hebergement à Marseille et activites*/
+    #accommodation-List .list, #activities-List .list {
+        margin-bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #accommodation-List .list article, #activities-List .list article{
+        width: 30%;
+        margin:10px;
+    }
 
+    #accommodation-List .list .info-cards h4,i{
+        font-size: 0.9em;
+    }
+    #activities-List .list .info-cards h4{
+        font-size: 0.8em;
+        margin:10px 5px;
+    }
+    #activities-List .img-cards{
+        margin-bottom:0;
+    }
+    #accommodation-List .seeMore{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.8em;
+    }
+    /*footer*/
+    #footerReservia .footerContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding:0;
+    }
+
+    .aboutUs h4,li{
+        font-size: 0.9em;
+    }
+   
+}
 
 }
