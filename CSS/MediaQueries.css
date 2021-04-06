@@ -94,6 +94,7 @@
 }
 
 @media screen and (min-width: 1002px){
+    /*header*/
     #banner{
         flex-wrap: nowrap;
     }
@@ -114,6 +115,46 @@
     #nav-inside a:hover, #nav-inside a:active{
         border-top: 3px var(--blue) solid;
         border-bottom:none;
+    }
+    /*partie recherche hébergement*/
+    #search-accommodation{
+        margin-left: 20px;
+    }
+    #search-accommodation .title-search-page{
+        text-align: start;
+    }
+    #search-accommodation .search-bar{
+        margin:0;
+    }
+    /*sections*/
+    #search-filters{
+        margin-left: 20px;
+    }
+    #accommodation-List{
+        order:1;
+        width: 60%;
+        margin-right: 10px;
+        background-color: var(--bg-gray);
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+    #accommodation-List .seeMore{
+        text-align: start;
+    }
+    #popular{
+        order:2;
+        width: 30%;
+        border-radius: 20px;
+    }
+    #activities-List{
+        order:3;
+    }
+    #Containt{
+        display: flex;
+        flex-wrap: wrap;   
+    }
+    .cardsPopular{
+        width: 90%;
     }
 
 

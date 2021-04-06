@@ -21,17 +21,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 #banner .logo-reservia{
     width: 20%;
 }
-/*#banner .nav-bar{
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;  
-}*/
 .registration{
     margin-top:40px;
     margin-right: 20px;
@@ -121,17 +114,15 @@
 }
                      /*******************************************MAIN**************************************/
 /**organisation de l'ordre d'affichage des différents themes***/
-#search-filters{
-    order:1;
-}
+
 #accommodation-List{
-    order:3;
-}
-#popular{
     order:2;
 }
+#popular{
+    order:1;
+}
 #activities-List{
-    order:4;
+    order:3;
 }
 /*propriétés générales du contenu MAIN*/
 #Marseille-search {
