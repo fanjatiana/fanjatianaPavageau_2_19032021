@@ -1,0 +1,35 @@
+@media screen and (min-width: 462px) and (max-width:812px){
+    /*******header partie recherche*******/
+    #search-map{
+        text-align: center;
+    }
+    /*barre de recherche*/
+    .search-bar{
+        margin:auto;
+        width: 400px;
+    }
+    /*********MAIN***********************/
+    /**partie filtre : i, info**/
+    #search-filters .info i{
+        float: none;
+    }
+
+    /*section les plus populaires*/
+    .list article{
+        width: 60%;
+    }
+
+    .cardsPopular .img-cards{
+        width: 100%;
+    }
+
+    .title-theme h3{
+        justify-content: center;
+    }
+
+    .title-theme i{
+        margin-left: 20px;
+    }
+   
+}
+    

@@ -7,15 +7,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="CSS/normalize.css"/>
         <link rel="stylesheet" href="CSS/styles.css"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet"> 
+        <!--<link rel="stylesheet" href="CSS/MediaQueries.css"/>-->
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet"/> 
         <script src="https://kit.fontawesome.com/e821dcf0e0.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <div id="banner">
-                <div class="home-registration">
+                <div class="nav-bar">
                     <div>
                         <h1><a href="index.html" title="retour page d'Accueil"><img src="images/logo/Reservia.svg" alt="logo du site Réservia"/></a></h1>   
                     </div>
@@ -30,7 +31,7 @@
                     </ul>
                 </nav><!--fin de la partie banniere et navigation interne-->
             </div>           
-            <div id="search-map">
+            <div id="search-accommodation">
                 <div class="title-search-page">
                     <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p>En plein centre ville ou en pleine nature</p>
@@ -52,10 +53,12 @@
                     <li><a class="button-filtre" href="#"><i class="fas fa-heart"></i>Romantique</a></li>
                     <li><a class="button-filtre" href="#"><i class="fas fa-dog"></i> Animaux autorisés</a></li>
                 </ul>
-                <p class="info"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+                <div class="info">
+                    <i class="fas fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>  
             </section><!--fin de la section filtre-->
-            <section id="accommodation-List" class="list">
-                <div>
+            <section id="accommodation-List">
+                <div class="title-theme" >
                     <h3>Hébergement à Marseille</h3>
                 </div>
                 <div class="list"> 
@@ -184,8 +187,8 @@
                     <a href="#">Afficher plus</a>
                 </div>
             </section><!--fin de la section Hébergement à Marseille-->
-            <section id="popular" class="list">
-                <div class="title-theme">
+            <section id="popular">
+                <div class="title-theme-popular title-theme">
                     <h3>Les plus populaires<i class="fas fa-chart-line"></i></h3>
                 </div>
                 <div class="list">          
@@ -251,11 +254,11 @@
                     </article><!--fin de l'article Hotel tout bleu et blanc-->
                 </div>         
             </section> <!--fin de la section les plus populaires-->
-            <section id="activities-List" class="list">
-                <div>
+            <section id="activities-List">
+                <div class="title-theme">
                     <h3>Activités à Marseille</h3>
                 </div>
-                <div>
+                <div  class="list">
                     <article>  
                         <a href="#" class="cardsActivities">
                             <div class="img-cards">

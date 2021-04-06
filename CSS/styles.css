@@ -7,23 +7,19 @@
     --bg-gray-dark:#d9d9d9;
 }
 /*propriétés générales*/
-*{
-    
+*{ 
     text-decoration: none;
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
-    max-width: 457px; 
+    max-width: 457px;
 }
-
-
-
-/************************************HEADER**************************************/
+                        /************************************HEADER**************************************/
 /*bannière du site*/
 #banner{
     width: 100%;
 }
-#banner .home-registration{
+#banner .nav-bar{
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -32,11 +28,11 @@
 .registration{
     margin-top:40px;
 }
-.registration a{
+.registration a , #nav-inside a:hover, #nav-inside a:active{
     font-weight: bold;
     color: var(--blue);
 }
-/*header:liens navigation interne*/
+/*header:liens navigation interne hébergements et activités*/
 #nav-inside ul { 
     display: flex;
     justify-content: space-between;
@@ -56,30 +52,21 @@
     border-bottom: 3px var(--bg-gray) solid;
     padding-bottom: 15px;;
 }
-#nav-inside a:hover{
-    color: var(--blue);
-    font-weight: bold;
+#nav-inside a:hover, #nav-inside a:active{
     border-bottom: 3px var(--blue) solid;    
 }
-/*#nav-inside a:visited{
-    color: var(--blue);     
-}*/
-#nav-inside a:active {
-    color: var(--blue);
-    font-weight: bold;  
-}
-/*partie titre et paragraphe de la recherche géolocalisée*/
-#search-map {
+/*partie trouvez votre hébergement*/
+#search-accommodation {
     margin:auto;
     width: 90%;    
 }
-#search-map h2 {
+#search-accommodation h2 {
     font-size: 1.7;
 }
 .title-search-page{
     margin-bottom: 40px;
 }
-/*partie barre de recherche*/   /*RESTE A METTRE EN PLACE LES ICONES*/
+/*partie barre de recherche*/
 .search-bar{
     width: 100%;
     display: flex;
@@ -98,23 +85,18 @@
 .search-bar .search-button{
     text-decoration: none;
     border: none;
-    font-size: 1.2em;
+    cursor: pointer;
     background-color: var(--blue);
-    border-radius: 35%;
+    border-radius: 15px;
     position:relative;
     right: 10px;
-    bottom: 2px;
-    /*height: 50px;*/
+    height: 45px;
     padding:12px;   
 }
 .search-bar .fa-map-marker-alt {
-    font-size: 1.4em;
     background-color:var(--bg-gray);
-    border-top-left-radius: 35%;
-    border-bottom-left-radius: 35%;
-    padding:10px 20px;
-    /*position: relative;
-    left: 5px;*/ 
+    border-radius: 15px 0 0 15px;
+    padding:10px 15px;
     height: 25px;  
 }
 #city-search::placeholder{   
@@ -124,7 +106,7 @@
 .search-bar .fa-search{
     color: #FFFFFF;
 }
-/*******************************************MAIN**************************************/
+                     /*******************************************MAIN**************************************/
 /**organisation de l'ordre d'affichage des différents themes***/
 #search-filters{
     order:1;
@@ -145,7 +127,7 @@
     display: flex;
     flex-direction:column;
 }
-/*Filtres*/
+/* propriétés générales des Filtres*/
 #search-filters{
     width: 90%;
     margin: auto;
@@ -155,11 +137,6 @@
   font-weight: bold;
   width: 100%;
 }
-
-/* monnaie:€*/
-span{
-    font-weight: bold;
-} 
 /*liste des filtres*/
 #search-filters ul{
     padding: 0;
@@ -174,11 +151,7 @@ span{
 }
 .list-filters a{
     border:3px var(--bg-gray-dark) solid;
-    border-top-right-radius:30px;
-    border-bottom-right-radius: 30px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-color: var(--bg-gray);
+    border-radius:30px;
     padding: 12px;
     color: var(--font-color);
     font-weight: bold;
@@ -192,8 +165,8 @@ span{
     font-size: 1.5em;
     padding:12px;
     position: relative;
-    top: 3px;
-    right: 13px;   
+    top: 2.5px;
+    right: 17px;   
 }
 .list-filters i.fa-child {
     width: 20px;
@@ -203,68 +176,52 @@ span{
 .list-filters a:hover{
     background-color: var(--blue);
     color: var(--light-blue);
+    border-color:var(--blue);
 }
 .list-filters a:active{
     background-color:var(--light-blue);
-    color: var(--blue);   
+    color: var(--blue); 
+    border-color: var(--light-blue);  
 }
 /*partie info i */
-.info{
+.info p{
     font-size: 0.9em;
-
 }
 .info i{
     border:1px var(--bg-gray-dark) solid;
     border-radius: 50%;
-    padding: 10px 14px;
+    padding: 5px 10px;
     color: var(--blue);
     float: left;
+    position: relative;
+    bottom: 7px;
     margin-right: 10px;
+    font-size: 0.8em;
 }
-
 /****propriétés générales des sections***/
+/* monnaie:€*/
+span{
+    font-weight: bold;
+}
 /**notes étoilées**/
 .rating-stars{
     font-size: 0.8em;
     color: var(--bg-gray-dark)
 }
-
 .rating-stars .blue-color{
     color: var(--blue);
 }
-/*******Section Les plus populaires*********/
-#popular{
-    background-color: var(--bg-gray);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 30px;
-}
+/* liste des articles*/
 .list article{
     width: 90%;
     margin: 10px auto;
 }
+/*titre des articles*/
 .title-theme  h3{
-    display: flex;
-    justify-content: space-between;
-    margin:30px 0 30px 20px; 
+    margin:30px 0 30px 20px;
+    font-weight: bold; 
 }
-
-.title-theme i{
-    margin-right: 20px;
-}
-
-/** liste de cartes de la section :les plus populaires*/
-
-.cardsPopular{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    border: 1px var(--bg-gray) solid;
-    border-radius: 20px;
-    box-shadow: 2px 5px 10px var(--bg-gray-dark);
-    background-color:#FFFFFF;   
-}
+/*propriétés générales des articles(cartes)*/
 .img-cards{
     width: 40%;
     margin: 5px 10px 2px 5px;    
@@ -285,86 +242,82 @@ span{
 }
 .info-cards h4 ,p{
     color: var(--font-color);
+    margin-top:0
 }
-
-.info-cards p{
-    margin-top:0;
-}
-
 .info-cards h4{
-    margin-bottom:10px;
-    margin-top:0;
+    margin-bottom:10px;   
 }
-
-/****section hébergement à Marseilles***/
+                                                /*******Section Les plus populaires*********/
+#popular{
+    background-color: var(--bg-gray);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.title-theme-popular h3{
+    display: flex;
+    justify-content: space-between;   
+}
+.title-theme-popular i{
+    margin-right: 20px;
+}
+.cardsPopular{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px var(--bg-gray) solid;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px var(--bg-gray-dark);
+    background-color:#FFFFFF;   
+}
+                                                /****Section hébergement à Marseilles***/
+#accommodation-List,#accommodation-List .img-cards,#accommodation-List .info-cards, .cardsAccommodation{
+    width: 100%;
+}
 .cardsAccommodation{
     display: flex;
     flex-direction: column;
-    width: 100%;
     border: 1px var(--bg-gray) solid;
     border-radius: 20px;
     box-shadow: 2px 5px 10px var(--bg-gray-dark); 
 }
-
-#accommodation-List{
-    width: 100%;;
-}
-
 #accommodation-List .img-cards img{
-    border-style: none;
-    object-fit: cover;
     width: 98%;
     height: 100px;
     border-radius: 20px 20px 0 0px;  
 }
-#accommodation-List .img-cards{
-    width: 100%;
-}
-#accommodation-List .info-cards{
-    width: 100%;
-}
 #accommodation-List h3{
     margin: 30px 0 30px 20px;
 }
-
 #accommodation-List .list{
     margin-bottom: 30px;
 }
-
 #accommodation-List .info-cards{
     margin-bottom:10px ;
 }
-
+/*lien :Affichez*/
 #accommodation-List .seeMore a{
     font-size: 1.1em;
     color: var(--font-color);
     font-weight: bold;
 }
-
 #accommodation-List .seeMore{
     margin:0 0 30px 20px;
 }
-
-/***Activités à Marseilles***/
+                                                /***Section Activités à Marseilles***/
 
 #activities-List {
     padding-bottom: 30px;
 }
-
-#activities-List h3{
-    margin: 30px 0 30px 20px;
-}
-
 #activities-List .cardsActivities{
     display: flex;
     flex-direction: column;
-    width: 100%;
     border: 1px var(--bg-gray) solid;
     border-radius: 20px;
     box-shadow: 2px 5px 10px var(--bg-gray-dark); 
 }
-
-#activities-List .img-cards, .info-cards{
+#activities-List .cardsActivities,.cardsActivities .img-cards, .cardsActivities .info-cards{
     width: 100%;
 }
 #activities-List .img-cards{
@@ -374,30 +327,24 @@ span{
     margin: 0 10px 20px 10px ;
     font-size: 0.9em;
 }
-
 #activities-List .img-cards img {
    border-radius: 20px 20px 0px 0px;
    height:100px ;
 }
-
-/*************************************FOOTER***********************/
-
+                            /*************************************FOOTER*******************************/
 /*A propos*/
-
 #footerReservia {
-   
     width: 100%;
     background-color: var(--bg-gray);
 }
 #footerReservia .footerContainer{
     width: 90%;
     margin: auto;
-    padding-top:30px; 
+    padding:30px 0; 
 }
 .aboutUs a{
     color: var(--font-color);
-    font-size: 0.9em;
-   
+    font-size: 0.9em;  
 }
 .aboutUs ul{
     padding-left:0;
@@ -405,4 +352,3 @@ span{
 .aboutUs ul li{
     margin-bottom: 10px;
 }
-
