@@ -18,21 +18,34 @@
 /*bannière du site*/
 #banner{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 }
-#banner .nav-bar{
+#banner .logo-reservia{
+    width: 20%;
+}
+/*#banner .nav-bar{
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin: auto;  
-}
+}*/
 .registration{
     margin-top:40px;
+    margin-right: 20px;
 }
 .registration a , #nav-inside a:hover, #nav-inside a:active{
     font-weight: bold;
     color: var(--blue);
 }
 /*header:liens navigation interne hébergements et activités*/
+#nav-inside{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 #nav-inside ul { 
     display: flex;
     justify-content: space-between;
