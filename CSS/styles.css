@@ -110,8 +110,23 @@
     color:var(--font-color);
     font-size: 0.9em;
 }
-.search-bar .fa-search{
+.search-bar .fa-search, .search-bar p{
     color: #FFFFFF;
+}
+/*bouton de recherche caché*/
+.search-bar p{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background-color: var(--blue);
+    border-radius: 0 15px 15px 0;
+    position:relative;
+    right: 50px;
+    height: 20px;
+    padding:12px;
+    display: none;
+    font-weight: bold;
+    font-size: 0.8em;
 }
                      /*******************************************MAIN**************************************/
 /**organisation de l'ordre d'affichage des différents themes***/
