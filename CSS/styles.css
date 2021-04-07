@@ -24,6 +24,7 @@
 }
 #banner .logo-reservia{
     width: 20%;
+    margin-left:10px;
 }
 .registration{
     margin-top:40px;
@@ -67,7 +68,7 @@
     width: 90%;    
 }
 #search-accommodation h2 {
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 .title-search-page{
     margin-bottom: 40px;
@@ -154,7 +155,7 @@
     margin-right: 8px; 
 }
 .list-filters a{
-    border:3px var(--bg-gray-dark) solid;
+    border:2px var(--bg-gray-dark) solid;
     border-radius:30px;
     padding: 12px;
     color: var(--font-color);
@@ -167,7 +168,7 @@
     color: var(--blue);
     border-radius: 50%;
     font-size: 1.5em;
-    padding:12px;
+    padding:10px;
     position: relative;
     top: 2.5px;
     right: 17px;   
@@ -208,8 +209,8 @@ span{
     font-weight: bold;
 }
 /**notes étoilées**/
-.rating-stars{
-    font-size: 0.8em;
+.rating-stars i{
+    font-size: 0.7em;
     color: var(--bg-gray-dark)
 }
 .rating-stars .blue-color{
@@ -223,7 +224,8 @@ span{
 /*titre des articles*/
 .title-theme  h3{
     margin:30px 0 30px 20px;
-    font-weight: bold; 
+    font-weight: bold;
+    font-size: 1.3em; 
 }
 /*propriétés générales des articles(cartes)*/
 .img-cards{
@@ -249,7 +251,8 @@ span{
     margin-top:0
 }
 .info-cards h4{
-    margin-bottom:10px;   
+    margin-bottom:10px;
+    font-size: 1em;   
 }
                                                 /*******Section Les plus populaires*********/
 #popular{
@@ -265,6 +268,7 @@ span{
 }
 .title-theme-popular i{
     margin-right: 20px;
+    font-size: 1.3em;
 }
 .cardsPopular{
     display: flex;
@@ -300,6 +304,14 @@ span{
 #accommodation-List .info-cards{
     margin-bottom:10px ;
 }
+#accommodation-List .info-cards p{
+    font-size: 0.9em;
+    margin-bottom:0; 
+}
+#accommodation-List .info-cards h4{
+    margin-bottom: 5px;;
+}
+
 /*lien :Affichez*/
 #accommodation-List .seeMore a{
     font-size: 1.1em;
@@ -347,6 +359,9 @@ span{
     padding:30px 0;
     display: flex;
     flex-direction: column; 
+}
+.aboutUs h4{
+    font-weight: bold;
 }
 .aboutUs a{
     color: var(--font-color);
