@@ -1,4 +1,4 @@
-@media screen and (min-width: 456px){
+@media screen and (min-width: 410px){
         /*header partie recherche hebergement*/
         #search-accommodation {
             text-align: center;
@@ -22,7 +22,8 @@
         }
 
         #search-filters h3{
-            width: 20%;
+            width: 10%;
+            margin:auto;
         }
         #search-filters ul{
             width: 80%;
@@ -72,7 +73,6 @@
         width: 100%;
         padding:0;
     }
-
     .aboutUs h4,li{
         font-size: 0.9em;
     }
@@ -112,6 +112,7 @@
         border-bottom: none;
         border-top:3px var(--bg-gray) solid ;
         padding-top:20px;
+        margin-right: 60px;
     }
     #nav-inside a:hover, #nav-inside a:active{
         border-top: 3px var(--blue) solid;
@@ -177,19 +178,16 @@
    }
    #activities-List .list article{
        width: 20%;
-
    }
    #activities-List .big-article,  #activities-List .list .big-img{
     height: 360px;
    }
-
   #activities-List .list .small-img{
       height: 100px;   
   }
   #activities-List .list .medium-img{
       height: 150px;
   }
-
   #activities-List .list .Fort-de-Pomegues {
       margin-bottom: 49px;
   }
