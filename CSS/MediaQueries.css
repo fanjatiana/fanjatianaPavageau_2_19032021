@@ -90,11 +90,12 @@
     #search-filters ul{
         width: 100%;
     }
-
 }
-
 @media screen and (min-width: 1002px){
     /*header*/
+    header{
+        width: 90%;
+    }
     #banner{
         flex-wrap: nowrap;
     }
@@ -139,6 +140,10 @@
         border-radius: 20px;
         margin-left: 10px;
     }
+    #accommodation-List .list article{
+        background-color: #FFFFFF;
+        border-radius: 20px;
+    }
     #accommodation-List .seeMore{
         text-align: start;
     }
@@ -146,6 +151,7 @@
         order:3;
         width: 30%;
         border-radius: 20px;
+        margin-left: 60px;
     }
     #activities-List{
         order:4;
@@ -157,6 +163,46 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
+    /*Activités à Marseille*/
+   #activities-List{
+       width: 100%;
+   }
+    #activities-List .list{
+        width: 100%;
+        height: 500px;
+        /*display: flex;*/
+        flex-direction: column;
+        align-items:flex-start;
+        flex-wrap: wrap;
+   }
+   #activities-List .list article{
+       width: 20%;
+
+   }
+   #activities-List .big-article,  #activities-List .list .big-img{
+    height: 360px;
+   }
+
+  #activities-List .list .small-img{
+      height: 100px;   
+  }
+  #activities-List .list .medium-img{
+      height: 150px;
+  }
+
+  #activities-List .list .Fort-de-Pomegues {
+      margin-bottom: 49px;
+  }
+  #activities-List .list .Longchamp{
+      margin-top:49px;
+  }
+
+
+
+
+   
+
+  
 
 
 }
