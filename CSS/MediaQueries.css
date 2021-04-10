@@ -1,12 +1,10 @@
 @media screen and (min-width: 410px){
         /*header partie recherche hebergement*/
         #search-accommodation {
-            text-align: center;
             margin-bottom: 30px;;
         }
         #search-accommodation .search-bar{
             width: 350px;
-            margin:auto;
         }
         .title-search-page {
             margin-bottom:0px;
@@ -36,7 +34,7 @@
 @media screen and (min-width: 600px){
     /*les plus populaires*/
     #popular{
-        width: 80%;
+        width: 60%;
         margin: auto;
         border-radius: 15px;
     }
@@ -86,9 +84,10 @@
 @media screen and (min-width: 740px) and (max-width:1023px){
      /*les plus populaires*/
      .cardsPopular{
-        width: 60%;
+        width: 100%;
         margin: auto;
     }
+   
     #search-filters h3{
         width: 10%;
         margin:auto;

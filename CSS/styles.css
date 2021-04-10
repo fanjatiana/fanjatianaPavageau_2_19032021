@@ -24,7 +24,7 @@
 }
 #banner .logo-reservia{
     width: 20%;
-    margin-left:10px;
+    margin-left:20px;
 }
 .registration{
     margin-top:40px;
@@ -147,6 +147,11 @@
     display: flex;
     flex-direction:column;
 }
+
+#Marseille-search .list{
+    width: 90%;
+    margin:auto;
+}
 /* propriétés générales des Filtres*/
 #search-filters{
     width: 90%;
@@ -233,7 +238,7 @@ span{
 }
 /* liste des articles*/
 .list article{
-    width: 90%;
+    width: 100%;
     margin: 10px auto;
 }
 /*titre des articles*/
