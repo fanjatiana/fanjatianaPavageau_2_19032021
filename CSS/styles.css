@@ -243,9 +243,12 @@ span{
 }
 /*titre des articles*/
 .title-theme  h3{
-    margin:30px 0 30px 20px;
     font-weight: bold;
     font-size: 1.3em; 
+}
+.title-theme{
+    width: 90%;
+    margin:auto;
 }
 /*propriétés générales des articles(cartes)*/
 .img-cards{
@@ -284,7 +287,8 @@ span{
 }
 .title-theme-popular h3{
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
+    margin-bottom:10px;   
 }
 .title-theme-popular i{
     margin-right: 20px;
@@ -315,9 +319,7 @@ span{
     height: 100px;
     border-radius: 20px 20px 0 0px;  
 }
-#accommodation-List h3{
-    margin: 30px 0 30px 20px;
-}
+
 #accommodation-List .list{
     margin-bottom: 30px;
 }
@@ -334,7 +336,7 @@ span{
 
 /*lien :Affichez*/
 #accommodation-List .seeMore a{
-    font-size: 1.1em;
+    font-size: 1em;
     color: var(--font-color);
     font-weight: bold;
 }

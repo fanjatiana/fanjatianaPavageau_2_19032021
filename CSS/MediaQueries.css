@@ -6,6 +6,10 @@
         #search-accommodation .search-bar{
             width: 350px;
         }
+        #accommodation-List .seeMore{
+            width: 90%;
+            margin:auto;
+        }
         .title-search-page {
             margin-bottom:0px;
         }
@@ -15,23 +19,31 @@
         .list-filters li{
             margin-bottom: 5px;
         }
-        .buttons-filter{
+        /*.buttons-filter{
             display: flex;
         }
 
         #search-filters h3{
             width: 10%;
             margin:auto;
-        }
+        }*/
         #search-filters ul{
             width: 80%;
         }
         .info{
             margin-top: 30px;
         }
+
 }
 
 @media screen and (min-width: 600px){
+    
+    .registration{
+        margin-right:30px;
+    }
+    #banner .logo-reservia{
+        margin-left: 30px;
+    }
     /*les plus populaires*/
     #popular{
         width: 60%;
@@ -88,10 +100,10 @@
         margin: auto;
     }
    
-    #search-filters h3{
+    /*#search-filters h3{
         width: 10%;
         margin:auto;
-    }
+    }*/
     #search-filters ul{
         width: 100%;
     }
