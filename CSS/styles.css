@@ -150,7 +150,6 @@
 
 #Marseille-search .list{
     width: 90%;
-    margin:auto;
 }
 /* propriétés générales des Filtres*/
 #search-filters{
@@ -248,7 +247,7 @@ span{
 }
 .title-theme{
     width: 90%;
-    margin:auto;
+    margin:10px auto;
 }
 /*propriétés générales des articles(cartes)*/
 .img-cards{

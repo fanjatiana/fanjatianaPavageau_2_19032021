@@ -116,18 +116,24 @@
     }
     #banner{
         flex-wrap: nowrap;
+        width: 90%;
+        margin: auto;
     }
     #banner .registration{
         order:3;
         margin-left: 30px;
         margin-top: 35px;
-        margin-right: 20px;
+
+    }
+    #banner .logo-reservia {
+        margin-left: 0px;
     }
     #banner .registration a{
         font-size: 0.8em;
     }
     #nav-inside{
-        margin-left: 500px;
+        margin-left: 200px;
+        width: 20%;
     }
     #nav-inside a{
         border-bottom: none;
@@ -141,12 +147,16 @@
         border-bottom:none;
     }
     /*bouton de recherche*/
+    
     .search-bar .search-button{
         display: none;
     }
     .search-bar p{
         display: inline;
         margin-top:1.5px;
+    }
+    #Marseille-search{
+        width: 90%;
     }
 
     /*partie recherche hébergement*/
@@ -155,11 +165,13 @@
     }
     #search-accommodation .title-search-page{
         text-align: start;
-        margin-left:20px;
     }
     /*filtres*/
     #search-filters .list-filters a{
         padding:10px;
+    }
+    #search-filters ul{
+        margin-left: 5px;
     }
     #search-filters .list-filters li{
         margin-right: 20px;
@@ -167,26 +179,38 @@
     #search-filters{
         order:1;
         margin-bottom:20px;
+        width: 100%;
+        
     }
-    #banner, #search-filters, #search-filters .buttons-filter, #search-filters .info, #search-accommodation .search-bar,  #search-accommodation, #activities-List{
-        margin-left: 20px;
-    }
+
+   
     #search-filters .info{
         margin-top:10px;
 
     }
     /*sections*/
+    #Marseille-search{
+        width: 100%;
+    }
+    #popular{
+        margin-left:30px;
+        margin-top:0;
+        margin-bottom:0;
+        margin-right: 0;
+        width: 32%;
+
+    }
     #Marseille-search .title-theme h3{
         font-size: 1em;
 
     }
     #accommodation-List{
         order:2;
-        width: 60%;
-        margin-right: 10px;
+        width: 55%;
+        margin-right: 0px;
         background-color: var(--bg-gray);
         border-radius: 20px;
-        margin-left: 40px;
+        margin-left: 50px;
     }
     #accommodation-List .list article{
         background-color: #FFFFFF;
@@ -194,6 +218,7 @@
     }
     #accommodation-List .seeMore{
         text-align: start;
+        margin-bottom:20px;
     }
     #popular{
         order:3;
@@ -216,12 +241,17 @@
        width: 100%;
        padding-bottom:0;
    }
+
+   #activities-List .title-theme{
+       margin:auto;
+   }
     #activities-List h3{
         margin-bottom:0;
     }
     #activities-List .list{
-        width: 100%;
+        width: 90%;
         height: 500px;
+        margin: auto;
         flex-direction: column;
         align-items:flex-start;
         flex-wrap: wrap;
@@ -247,10 +277,11 @@
   }
   /*footer*/
   .aboutUs{
-      margin-left: 30px;
+      margin-left: 60px;
+      width: 30%;
   }
   .aboutUs:nth-child(3){
-      margin-right: 350px;
+      margin-right: 100px;
   }
  
 
