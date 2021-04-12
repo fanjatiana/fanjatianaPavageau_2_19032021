@@ -202,8 +202,12 @@
         width: 100%;
        
     }
-
-   
+    #Marseille-search {
+        justify-content: space-between;
+    }
+   #Marseille-search .list {
+    width: 100%;
+   }
     #search-filters .info{
         margin-top:10px;
 
@@ -213,12 +217,12 @@
     }
 
     #search-filters .buttons-filter h3{
-        width: 5%;
+        width: 8%;
         align-items: center;
         display: flex;
     }
     #search-filters .buttons-filter ul {
-        width: 95%;
+        width: 92%;
     }
 
     /*sections*/
@@ -226,14 +230,17 @@
         width: 90%;
     }
     #popular{
-        margin-left:30px;
+
         margin-top:0;
         margin-bottom:0;
         margin-right: 0;
-        width: 32%;
+        width: 35%;
 
     }
-
+    #popular .list{
+        margin-top:10px;
+        margin-bottom:10px;
+    }
    
     #Marseille-search .title-theme h3{
         font-size: 1em;
@@ -241,7 +248,7 @@
     }
     #accommodation-List{
         order:2;
-        width: 55%;
+        width: 60%;
         margin-right: 0px;
         background-color: var(--bg-gray);
         border-radius: 20px;
@@ -255,14 +262,14 @@
         width: 200px;
     }
     #accommodation-List .seeMore{
-        text-align: start;
+        display: flex;
+        align-items: flex-start;
+        width: 400px;
         margin-bottom:20px;
     }
     #popular{
         order:3;
-        width: 30%;
         border-radius: 20px;
-        margin-left: 40px;
     }
     #activities-List{
         order:4;
@@ -281,13 +288,13 @@
    }
 
    #activities-List .title-theme{
-       margin:auto;
+       width: 100%;
    }
     #activities-List h3{
         margin-bottom:0;
     }
     #activities-List .list{
-        width: 90%;
+        width: 100%;
         height: 500px;
         margin: auto;
         flex-direction: column;
