@@ -150,6 +150,7 @@
 
 #Marseille-search .list{
     width: 90%;
+    margin:auto;
 }
 /* propriétés générales des Filtres*/
 #search-filters{

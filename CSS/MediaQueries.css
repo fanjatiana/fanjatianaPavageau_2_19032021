@@ -46,13 +46,17 @@
     }
     /*les plus populaires*/
     #popular{
-        width: 60%;
+        width: 90%;
         margin: auto;
         border-radius: 15px;
     }
+
+    #popular .list{
+        width: 100%;
+    }
     
     .cardsPopular{
-        width: 80%;
+        width: 60%;
         margin: auto;
     }
     /*hebergement à Marseille et activites*/
@@ -94,12 +98,12 @@
         font-size: 0.9em;
     }
 }
-@media screen and (min-width: 740px) and (max-width:990px){
-     /*les plus populaires*/
+@media screen and (min-width: 740px) and (max-width:900px){
+     /*les plus populaires
      .cardsPopular{
         width: 100%;
         margin: auto;
-    }
+    }*/
    
     /*#search-filters h3{
         width: 10%;
@@ -109,7 +113,7 @@
         width: 100%;
     }
 }
-@media screen and (min-width: 991px){
+@media screen and (min-width: 901px){
     /*header*/
     header{
         width: 90%;
@@ -200,6 +204,8 @@
         width: 32%;
 
     }
+
+   
     #Marseille-search .title-theme h3{
         font-size: 1em;
 
@@ -212,9 +218,13 @@
         border-radius: 20px;
         margin-left: 50px;
     }
+    #accommodation-List .list{
+        width: 100%;
+    }
     #accommodation-List .list article{
         background-color: #FFFFFF;
         border-radius: 20px;
+        width: 200px;
     }
     #accommodation-List .seeMore{
         text-align: start;
@@ -283,14 +293,8 @@
   .aboutUs:nth-child(3){
       margin-right: 100px;
   }
- 
-
-
-
-
-   
-
-  
-
-
 }
+@media screen and (min-width: 1600px)
+
+
+
