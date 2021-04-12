@@ -13,6 +13,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     /*max-width: 457px;*/
+    height: auto;
 }
                         /************************************HEADER**************************************/
 /*bannière du site*/
@@ -123,7 +124,7 @@
     position:relative;
     right: 50px;
     height: 20px;
-    padding:12px;
+    padding:12px 20px;
     display: none;
     font-weight: bold;
     font-size: 0.8em;
