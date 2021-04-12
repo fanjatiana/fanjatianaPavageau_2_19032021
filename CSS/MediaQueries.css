@@ -267,12 +267,12 @@
     #accommodation-List .list article{
         background-color: #FFFFFF;
         border-radius: 20px;
-        width: 200px;
+        width: 45%;
     }
     #accommodation-List .seeMore{
         display: flex;
         align-items: flex-start;
-        width: 400px;
+        width: 93%;
         margin-bottom:20px;
     }
     #popular{
@@ -334,7 +334,7 @@
   }
   /*footer*/
   #footerReservia .footerContainer{
-    justify-content: space-around;
+    justify-content: space-between;
     width: 90%;
   }
   .aboutUs{
@@ -343,7 +343,32 @@
       width: 30%;
   }
 }
-@media screen and (min-width: 1600px)
+@media screen and (min-width: 1220px){
 
+#accommodation-List .seeMore{
+    width: 95%;
+    margin-top:45px;
+}
+.cardsPopular {
+    width: 80%;
+}
+#popular .list{
+    margin-top:0;
+    margin-bottom:0;
+}
+#accommodation-List{
+    width: 65%;
+}
+#accommodation-List .list{
+    justify-content: center;
+}
+#accommodation-List .list article{
+    width: 30%;
+    margin:10px;
+}
 
+#popular{
+    width:30% ;
+}
+}
 
