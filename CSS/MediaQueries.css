@@ -1,4 +1,4 @@
-@media screen and (min-width: 410px){
+@media screen and (min-width: 410px)/*mediaqueries mobile*/{
         /*header partie recherche hebergement*/
         #search-accommodation {
             margin-bottom: 30px;;
@@ -26,8 +26,8 @@
         .info{
             margin-top: 30px;
         }
-}
-@media screen and (min-width: 500px){  
+} 
+@media screen and (min-width: 500px)/*mediaQueries mobile paysage et tablette portrait*/{  
     /*header: banniere et navigation interne*/
     .registration{
         margin-right:30px;
@@ -98,12 +98,12 @@
         font-size: 0.9em;
     }
 }
-@media screen and (min-width: 740px) and (max-width:900px){
+@media screen and (min-width: 740px) and (max-width:900px)/*mediaQueries tablette portrait*/{
     #search-filters ul{
         width: 100%;
     }
 }
-@media screen and (min-width: 901px){
+@media screen and (min-width: 901px) /*mediaQueries tablette paysage*/{
     /*header: bannière et navigation interne*/
     header{
         width: 100%;
@@ -313,7 +313,7 @@
         width: 30%;
     }
 }
-@media screen and (min-width: 1220px){
+@media screen and (min-width: 1220px)/*mediaQueries desktop*/{
     /*section hebergement*/
     #accommodation-List{
         width: 65%;
@@ -345,7 +345,7 @@
         object-position: top;
     }
 }
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1300px) /*mediaQueries desktop et grands ecrans*/ {
     body{
         max-width: 1500px;
         margin:auto;
