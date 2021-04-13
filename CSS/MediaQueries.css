@@ -6,60 +6,49 @@
         #search-accommodation .search-bar{
             width: 350px;
         }
+        /*header : titres du site*/
+        .title-search-page {
+            margin-bottom:0px;
+        }
+        /*partie en savoir plus : hebergement à Marseille*/
         #accommodation-List .seeMore{
             width: 90%;
             margin:auto;
         }
-        .title-search-page {
-            margin-bottom:0px;
-        }
+        /*filtres de recherche*/
         .list-filters a {
             font-size: 0.8em;
         }
-        .list-filters li{
-            margin-bottom: 5px;
-        }
-        /*.buttons-filter{
-            display: flex;
-        }
-
-        #search-filters h3{
-            width: 10%;
-            margin:auto;
-        }*/
         #search-filters ul{
             width: 80%;
         }
+        /*info i des recherches*/
         .info{
             margin-top: 30px;
         }
-
 }
-
-@media screen and (min-width: 500px){
-    
+@media screen and (min-width: 500px){  
+    /*header: banniere et navigation interne*/
     .registration{
         margin-right:30px;
     }
     #banner .logo-reservia{
         margin-left: 30px;
     }
-    /*les plus populaires*/
+    /*section les plus populaires*/
     #popular{
         width: 90%;
         margin: auto;
         border-radius: 15px;
     }
-
     #popular .list{
         width: 100%;
     }
-    
     .cardsPopular{
         width: 60%;
         margin: auto;
     }
-    /*hebergement à Marseille et activites*/
+    /*sections hebergement à Marseille et activites*/
     #accommodation-List .list, #activities-List .list {
         margin-bottom: 0;
         width: 90%;
@@ -73,16 +62,14 @@
     }
     #accommodation-List .img-cards img, #activities-List .img-cards img {
         width: 95%;
-        margin-top:5px;
-        
+        margin-top:5px;    
     }
     #accommodation-List .info-cards, #activities-List .info-cards {
         width: 95%;
         margin:5px 0px 5px 20px;
     }
     #accommodation-List .list article, #activities-List .list article{
-        width: 40%;
-        
+        width: 40%;   
     }
     #accommodation-List .list .info-cards h4,i{
         font-size: 0.9em;
@@ -112,22 +99,12 @@
     }
 }
 @media screen and (min-width: 740px) and (max-width:900px){
-     /*les plus populaires
-     .cardsPopular{
-        width: 100%;
-        margin: auto;
-    }*/
-   
-    /*#search-filters h3{
-        width: 10%;
-        margin:auto;
-    }*/
     #search-filters ul{
         width: 100%;
     }
 }
 @media screen and (min-width: 901px){
-    /*header*/
+    /*header: bannière et navigation interne*/
     header{
         width: 100%;
     }
@@ -142,8 +119,6 @@
         width: 10%;
         margin-right: 0px;
         display: flex;
-
-
     }
     #banner .registration a{
         margin-left:28px ;
@@ -162,7 +137,6 @@
     #nav-inside ul{
         width: 50%;
     }
-
     #nav-inside a{
         border-bottom: none;
         border-top:3px var(--bg-gray) solid ;
@@ -188,8 +162,7 @@
     #Marseille-search{
         width: 90%;
     }
-
-    /*partie recherche hébergement*/
+    /*section recherche hébergement*/
     #search-accommodation{
         margin-bottom:0;
     }
@@ -199,7 +172,7 @@
     #search-accommodation .search-bar {
         width: 420px;
     }
-    /*filtres*/
+    /*filtres de recherche*/
     #search-filters .list-filters a{
         padding:10px;
     }
@@ -214,29 +187,16 @@
         margin:0;
         width: 100%;  
     }
-
     #search-filters .info{
         margin-bottom:30px;
-    }
-
-    #search-filters .list{
-        width: 100%;
-       
-    }
-    #Marseille-search {
-        justify-content: space-between;
-    }
-   #Marseille-search .list {
-    width: 100%;
-   }
-    #search-filters .info{
         margin-top:10px;
-
+    }
+    #search-filters .list{
+        width: 100%;   
     }
     #search-filters .buttons-filter{
         display: flex;
     }
-
     #search-filters .buttons-filter h3{
         width: 8%;
         align-items: center;
@@ -245,28 +205,36 @@
     #search-filters .buttons-filter ul {
         width: 92%;
     }
-
-    /*sections*/
-    #Marseille-search{
+    /*propriétés générales du MAIN*/
+    #Marseille-search {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         width: 90%;
     }
+   #Marseille-search .list {
+    width: 100%;
+   }
+   #Marseille-search .title-theme h3{
+    font-size: 1em;
+   }
+    /*sections les plus populaires*/
     #popular{
-
         margin-top:0;
         margin-bottom:0;
         margin-right: 0;
         width: 35%;
-
+        order:3;
+        border-radius: 20px;
     }
     #popular .list{
         margin-top:10px;
         margin-bottom:10px;
     }
-   
-    #Marseille-search .title-theme h3{
-        font-size: 1em;
-
+    .cardsPopular{
+        width: 90%;
     }
+    /*section hébergement à Marseille*/
     #accommodation-List{
         order:2;
         width: 60%;
@@ -277,13 +245,6 @@
     #accommodation-List .list{
         width: 100%;
     }
-  
-    #activities-List .img-cards img, #activities-List .info-cards {
-        width: 100%;
-        margin-top:0px;
-        
-    }
-   
     #accommodation-List .list article{
         background-color: #FFFFFF;
         border-radius: 20px;
@@ -295,30 +256,20 @@
         width:95% ;
         margin-bottom:20px;
     }
-    #popular{
-        order:3;
-        border-radius: 20px;
+    /*Activités à Marseille*/
+    #activities-List .img-cards img, #activities-List .info-cards {
+        width: 100%;
+        margin-top:0px;   
     }
     #activities-List{
         order:4;
+        width: 100%;
+        padding-bottom:0;
+        margin-top:30px;
     }
-    .cardsPopular{
-        width: 90%;
-    }
-    #Marseille-search{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    /*Activités à Marseille*/
-   #activities-List{
+    #activities-List .title-theme{
        width: 100%;
-       padding-bottom:0;
-       margin-top:30px;
-   }
-
-   #activities-List .title-theme{
-       width: 100%;
-   }
+    }
     #activities-List h4{
         padding-left: 10px;
     }
@@ -329,86 +280,72 @@
         flex-direction: column;
         justify-content: flex-start;
         align-content: space-between;
-        flex-wrap: wrap;
-        
-   }
-   #activities-List .list article{
-       width: 23%;
-       margin:0;
-   }
-   #activities-List .big-article,  #activities-List .list .big-img{
-    height: 360px;
-   }
-  #activities-List .list .small-img{
-      height: 100px;   
-  }
-  #activities-List .list .medium-img{
-      height: 150px;
-  }
-  #activities-List .list .Fort-de-Pomegues {
-      margin-bottom: 65px;
-  }
-  #activities-List .list .Longchamp{
-      margin-top:65px;
-      margin-right: 0;
-  }
-  /*footer*/
-  #footerReservia .footerContainer{
-    justify-content: space-between;
-    width: 90%;
-  }
-  .aboutUs{
-      margin-left:0;
-      margin-right: 0;
-      width: 30%;
-  }
+        flex-wrap: wrap;    
+    }
+    #activities-List .list article{
+        width: 23%;
+        margin:0;
+    }
+    #activities-List .big-article,  #activities-List .list .big-img{
+        height: 360px;
+    }
+    #activities-List .list .small-img{
+        height: 100px;   
+    }
+    #activities-List .list .medium-img{
+        height: 150px;
+    }
+    #activities-List .list .Fort-de-Pomegues {
+        margin-bottom: 65px;
+    }
+    #activities-List .list .Longchamp{
+        margin-top:65px;
+        margin-right: 0;
+    }
+    /*footer*/
+    #footerReservia .footerContainer{
+        justify-content: space-between;
+        width: 90%;
+    }
+    .aboutUs{
+        margin-left:0;
+        margin-right: 0;
+        width: 30%;
+    }
 }
 @media screen and (min-width: 1220px){
-
-    #activities-List .list .small-img{
-        object-position: top;
+    /*section hebergement*/
+    #accommodation-List{
+        width: 65%;
     }
-#accommodation-List .seeMore{
-    width: 95%;
-    margin-top:45px;
-}
-.cardsPopular {
-    width: 80%;
-}
-#popular .list{
-    margin-top:0;
-    margin-bottom:0;
-}
-#accommodation-List{
-    width: 65%;
-}
-#accommodation-List .list{
-    justify-content: center;
-}
-#accommodation-List .list article{
-    width: 30%;
-    margin:10px;
-}
-
-#popular{
-    width:30% ;
-}
-}
-
-@media screen and (min-width: 1300px){
-    #popular .img-cards img {
-        height: 145px;
+    #accommodation-List .list{
+        justify-content: center;
     }
-    #banner .logo-reservia{
+    #accommodation-List .list article{
+        width: 30%;
+        margin:10px;
+    }
+    #accommodation-List .seeMore{
+        width: 95%;
+        margin-top:45px;
+    }
+    /*section les plus populaires*/
+    .cardsPopular {
         width: 80%;
     }
-    #nav-inside{
-        margin-left: 150px;
-        width: 20%;
+    #popular .list{
+        margin-top:0;
+        margin-bottom:0;
     }
-
-    
-    
+    #popular{
+        width:30% ;
+    }
+    /*section activites à Marseille*/
+    #activities-List .notreDG img{
+        object-position: top;
+    }
+}
+@media screen and (min-width: 1300px){
     body{
         max-width: 1500px;
         margin:auto;
@@ -416,9 +353,15 @@
     *{
         font-size: 1.1rem;
     }
-    #popular .img-cards img{
-        height: 165px;
+    /*HEADER bannière et navigation*/
+    #banner .logo-reservia{
+        width: 80%;
     }
+    #nav-inside{
+        margin-left: 150px;
+        width: 20%;
+    }
+    /*filtres de recherche*/
     #search-filters .buttons-filter h3 {
         width: 6%;
     }
@@ -433,10 +376,7 @@
         padding: 12px;
         right: 17px;
     }
-
-    #accommodation-List {
-        height: 660px;
-    }
+    /*sections populaires et hebergements à Marseille*/
     #popular {
         width: 30%;
         height: 630px;
@@ -444,11 +384,13 @@
     #popular .cardsPopular{
         width: 90%;
     }
-
-   #popular .list  article{
+    #popular .list  article{
         margin: 0px auto 10px;
-   }
-
-   
+    }  
+    #popular .img-cards img {
+        height: 145px;
+    }
+    #accommodation-List {
+        height: 660px;
+    }  
 }
-

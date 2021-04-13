@@ -131,7 +131,6 @@
 }
                      /*******************************************MAIN**************************************/
 /**organisation de l'ordre d'affichage des différents themes***/
-
 #accommodation-List{
     order:2;
 }
@@ -148,7 +147,6 @@
     display: flex;
     flex-direction:column;
 }
-
 #Marseille-search .list{
     width: 90%;
     margin:auto;
@@ -189,16 +187,16 @@
     color: var(--blue);
     border-radius: 50%;
     font-size: 1.5em;
-    padding:8.8px;
+    padding:11px;
     position: relative;
     top: 2.5px;
-    right: 15px;   
+    right: 17px;   
 }
 .list-filters i.fa-child {
     width: 20px;
     padding-left: 12px;
 }
-/*effets au survole sur les listes*/
+/*effets de survole et clique sur les filtres*/
 .list-filters a:hover{
     background-color: var(--blue);
     color: var(--light-blue);
@@ -229,7 +227,7 @@
 span{
     font-weight: bold;
 }
-/**notes étoilées**/
+/*notes étoilées*/
 .rating-stars i{
     font-size: 0.7em;
     color: var(--bg-gray-dark)
@@ -251,7 +249,7 @@ span{
     width: 90%;
     margin:10px auto;
 }
-/*propriétés générales des articles(cartes)*/
+/*propriétés générales des articles: images et textes*/
 .img-cards{
     width: 40%;
     margin: 5px 10px 2px 5px;    
@@ -279,6 +277,7 @@ span{
     font-size: 1em;   
 }
                                                 /*******Section Les plus populaires*********/
+
 #popular{
     background-color: var(--bg-gray);
     width: 100%;
@@ -320,7 +319,6 @@ span{
     height: 100px;
     border-radius: 20px 20px 0 0px;  
 }
-
 #accommodation-List .list{
     margin-bottom: 30px;
 }
@@ -334,7 +332,6 @@ span{
 #accommodation-List .info-cards h4{
     margin-bottom: 5px;;
 }
-
 /*lien :Affichez*/
 #accommodation-List .seeMore a{
     font-size: 1em;
