@@ -396,6 +396,19 @@
     #popular .img-cards img {
         height: 145px;
     }
+    #banner .logo-reservia{
+        width: 80%;
+    }
+    #nav-inside{
+        margin-left: 150px;
+        width: 20%;
+    }
+
+    #activities-List .list .small-img:nth-last-child(){
+        object-position: top;
+    }
+    
+    
     body{
         max-width: 1500px;
         margin:auto;
