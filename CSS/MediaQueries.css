@@ -36,7 +36,7 @@
 
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 500px){
     
     .registration{
         margin-right:30px;
@@ -67,9 +67,22 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    #accommodation-List .img-cards, #activities-List .img-cards {
+        margin:0;
+        text-align: center;
+    }
+    #accommodation-List .img-cards img, #activities-List .img-cards img {
+        width: 95%;
+        margin-top:5px;
+        
+    }
+    #accommodation-List .info-cards, #activities-List .info-cards {
+        width: 95%;
+        margin:5px auto;
+    }
     #accommodation-List .list article, #activities-List .list article{
-        width: 30%;
-        margin:10px;
+        width: 40%;
+        
     }
     #accommodation-List .list .info-cards h4,i{
         font-size: 0.9em;
@@ -264,6 +277,13 @@
     #accommodation-List .list{
         width: 100%;
     }
+  
+    #activities-List .img-cards img, #activities-List .info-cards {
+        width: 100%;
+        margin-top:0px;
+        
+    }
+   
     #accommodation-List .list article{
         background-color: #FFFFFF;
         border-radius: 20px;
@@ -272,7 +292,7 @@
     #accommodation-List .seeMore{
         display: flex;
         align-items: flex-start;
-        width: 93%;
+        width: ;
         margin-bottom:20px;
     }
     #popular{
@@ -299,8 +319,8 @@
    #activities-List .title-theme{
        width: 100%;
    }
-    #activities-List h3{
-        margin-bottom:0;
+    #activities-List h4{
+        padding-left: 10px;
     }
     #activities-List .list{
         width: 100%;
@@ -313,7 +333,7 @@
         
    }
    #activities-List .list article{
-       width: 20%;
+       width: 23%;
        margin:0;
    }
    #activities-List .big-article,  #activities-List .list .big-img{
@@ -326,10 +346,10 @@
       height: 150px;
   }
   #activities-List .list .Fort-de-Pomegues {
-      margin-bottom: 49px;
+      margin-bottom: 65px;
   }
   #activities-List .list .Longchamp{
-      margin-top:49px;
+      margin-top:65px;
       margin-right: 0;
   }
   /*footer*/
@@ -370,5 +390,52 @@
 #popular{
     width:30% ;
 }
+}
+
+@media screen and (min-width: 1300px){
+    #popular .img-cards img {
+        height: 145px;
+    }
+    body{
+        max-width: 1500px;
+        margin:auto;
+    }
+    *{
+        font-size: 1.1rem;
+    }
+    #popular .img-cards img{
+        height: 165px;
+    }
+    #search-filters .buttons-filter h3 {
+        width: 6%;
+    }
+    #search-filters .buttons-filter ul {
+        width: 94%;
+    }
+    #search-filters .list-filters a {
+        padding: 12px;
+    }
+    .list-filters i
+    {
+        padding: 12px;
+        right: 17px;
+    }
+
+    #accommodation-List {
+        height: 660px;
+    }
+    #popular {
+        width: 30%;
+        height: 630px;
+    }
+    #popular .cardsPopular{
+        width: 90%;
+    }
+
+   #popular .list  article{
+        margin: 0px auto 10px;
+   }
+
+   
 }
 
