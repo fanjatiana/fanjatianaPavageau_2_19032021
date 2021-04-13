@@ -78,7 +78,7 @@
     }
     #accommodation-List .info-cards, #activities-List .info-cards {
         width: 95%;
-        margin:5px auto;
+        margin:5px 0px 5px 20px;
     }
     #accommodation-List .list article, #activities-List .list article{
         width: 40%;
@@ -292,7 +292,7 @@
     #accommodation-List .seeMore{
         display: flex;
         align-items: flex-start;
-        width: ;
+        width:95% ;
         margin-bottom:20px;
     }
     #popular{
@@ -365,6 +365,9 @@
 }
 @media screen and (min-width: 1220px){
 
+    #activities-List .list .small-img{
+        object-position: top;
+    }
 #accommodation-List .seeMore{
     width: 95%;
     margin-top:45px;
@@ -404,9 +407,6 @@
         width: 20%;
     }
 
-    #activities-List .list .small-img:nth-last-child(){
-        object-position: top;
-    }
     
     
     body{
