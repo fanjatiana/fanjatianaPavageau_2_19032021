@@ -75,7 +75,7 @@
         font-size: 0.9em;
     }
     #activities-List .list .info-cards h4{
-        font-size: 0.8em;
+        font-size: 0.7em;
         margin:10px 5px;
     }
     #activities-List .img-cards{
@@ -136,17 +136,21 @@
     }
     #nav-inside ul{
         width: 50%;
+        margin-top:0;
     }
     #nav-inside a{
         border-bottom: none;
-        border-top:3px var(--bg-gray) solid ;
+        border-top:2px #FFFFFF solid;
         padding-top:20px;
         margin-right: 60px;
         font-size: 0.9em;
     }
     #nav-inside a:hover, #nav-inside a:active{
-        border-top: 3px var(--blue) solid;
+        border-top: 2px var(--blue) solid;
         border-bottom:none;
+    }
+    #banner .registration{
+        margin-top:21px;
     }
     /*bouton de recherche*/
     .search-bar{
@@ -212,12 +216,12 @@
         justify-content: space-between;
         width: 90%;
     }
-   #Marseille-search .list {
-    width: 100%;
-   }
-   #Marseille-search .title-theme h3{
-    font-size: 1em;
-   }
+    #Marseille-search .list {
+        width: 100%;
+    }
+    #Marseille-search .title-theme h3{
+        font-size: 1em;
+    }
     /*sections les plus populaires*/
     #popular{
         margin-top:0;
@@ -231,9 +235,23 @@
         margin-top:10px;
         margin-bottom:10px;
     }
+    #popular .list article{
+        width: 90%;
+        margin: 0px auto 20px;
+    }
     .cardsPopular{
         width: 90%;
     }
+    .title-theme-popular{
+        margin:0 auto;
+    }
+    .title-theme-popular h3{
+        width: 90%;
+        margin:20px auto 10px;
+    }
+    .title-theme-popular i{
+        margin-right: 0;
+    }  
     /*section hébergement à Marseille*/
     #accommodation-List{
         order:2;
@@ -256,6 +274,9 @@
         width:95% ;
         margin-bottom:20px;
     }
+    #accommodation-List .title-theme{
+        width: 95%;
+    }  
     /*Activités à Marseille*/
     #activities-List .img-cards img, #activities-List .info-cards {
         width: 100%;
@@ -269,9 +290,6 @@
     }
     #activities-List .title-theme{
        width: 100%;
-    }
-    #activities-List h4{
-        padding-left: 10px;
     }
     #activities-List .list{
         width: 100%;
@@ -316,29 +334,35 @@
 @media screen and (min-width: 1220px)/*mediaQueries desktop*/{
     /*section hebergement*/
     #accommodation-List{
-        width: 65%;
+        width: 60%;
+        padding-top:20px;
     }
     #accommodation-List .list{
         justify-content: center;
     }
     #accommodation-List .list article{
         width: 30%;
-        margin:10px;
+        margin:7px;
+    }
+    #popular .list article,#popular .list a{
+        height: 120px;
+    }
+    #popular .img-cards img{
+        height: 113px;
     }
     #accommodation-List .seeMore{
         width: 95%;
-        margin-top:45px;
+        margin-top:25px;
     }
     /*section les plus populaires*/
-    .cardsPopular {
-        width: 80%;
-    }
-    #popular .list{
-        margin-top:0;
-        margin-bottom:0;
+    #popular{
+        width:35% ;
     }
     #popular{
-        width:30% ;
+        padding-top:20px;
+    }
+    #popular .info-cards{
+        padding-bottom: 10px;
     }
     /*section activites à Marseille*/
     #activities-List .notreDG img{
@@ -352,7 +376,7 @@
     }
     *{
         font-size: 1.1rem;
-    }
+    }  
     /*HEADER bannière et navigation*/
     #banner .logo-reservia{
         width: 80%;
@@ -377,20 +401,22 @@
         right: 17px;
     }
     /*sections populaires et hebergements à Marseille*/
-    #popular {
-        width: 30%;
-        height: 630px;
+    #popular .list article, #popular .list a{
+        height: 130px;
     }
-    #popular .cardsPopular{
-        width: 90%;
+    #popular .img-cards img{
+        height: 120px;
     }
-    #popular .list  article{
-        margin: 0px auto 10px;
-    }  
-    #popular .img-cards img {
-        height: 145px;
+    #popular .list article{
+        margin-bottom:30px;
     }
-    #accommodation-List {
-        height: 660px;
-    }  
+    #accommodation-List .seeMore{
+        margin-top:35px;
+    }
+    #accommodation-List .info-cards h4+p{
+        font-size: 0.9em;
+    }
+    #popular .info-cards h4+p{
+        font-size: 0.9em;
+    }   
 }
